@@ -1,0 +1,18 @@
+# course config files
+*.yaml
+
+# gradle
+.gradle/
+build
+
+
+# idea config
+.idea
+
+# old stages
+/Real-time Chat/*
+!/Real-time Chat/task/
+/Real-time Chat/task/*
+!/Real-time Chat/task/resources
+!/Real-time Chat/task/src
+!/Real-time Chat/task/build.gradle

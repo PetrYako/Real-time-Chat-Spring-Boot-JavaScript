@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.5.0/sockjs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <script src="chat.js" defer></script>
+</head>
+<body>
+<div id="users">
+    <div class="public-chat-container">
+        <button class="chat-btn selected-chat" id="public-chat-btn" onclick="switchToPublicChat()">Public chat</button>
+    </div>
+</div>
+<div class="msg-container">
+    <div id="chat-with">Public chat</div>
+    <div id="messages"></div>
+    <div class="input-container">
+        <input class="message-input" type="text" id="input-msg" placeholder="Type a message">
+        <button class="send-button" id="send-msg-btn" onsubmit="sendMessage()" onclick="sendMessage()">Send</button>
+    </div>
+</div>
+</body>
+</html>
